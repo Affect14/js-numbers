@@ -6,21 +6,115 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 #wallpaper {
     position: absolute;
     min-width: 100%;
     min-height: 100%;
 }
+
 .centerbox {
     font-family: 'League Spartan', sans-serif;
     padding-top: 100px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
     color: aliceblue;
-    font-size: 26px;
+}
+
+button {
+    border: none;
+    background-color: darkslateblue;
+    color: aliceblue;
+    width: 100px;
+    height: 25px;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(46, 37, 105);
+    transition: 0.3s;
+}
+
+input {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: darkslateblue;
+    color: aliceblue;
+    text-align: center;
+    font-style: 'Garamond';
+    width: 70%;
+    height: 35px;
+    border: 1px solid black;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input::placeholder {
+    color: aliceblue;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+input::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .centerbox {
+        width: 90%;
+        font-size: 42px;
+    }
+    input {
+        height: 50px;
+        font-size: 32px;
+    }
+    button {
+        width: 150px;
+        height: 50px;
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .centerbox {
+        width: 60%;
+        font-size: 32px;
+    }
+    input {
+        height: 35px;
+        font-size: 20px;
+    }
+    button {
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .centerbox {
+        width: 35%;
+        font-size: 20px;
+    }
+    input {
+        height: 35px;
+        font-size: 20px;
+    }
+    button {
+        width: 100px;
+        height: 40px;
+        font-size: 20px;
+    }
 }
 
 img {
@@ -50,57 +144,9 @@ img:hover {
     padding: 10px;
     align-items: center;
     flex-direction: column;
-    font-size: 20px;
     text-align: center;
     background-color: rgb(216, 84, 128);
     border-color: black;
     border-radius: 10px;
     border: 1px solid rgb(0, 20, 109);
-}
-
-button {
-    border: none;
-    background-color: darkslateblue;
-    color: aliceblue;
-    width: 100px;
-    height: 25px;
-    border: 1px solid black;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: rgb(46, 37, 105);
-    transition: 0.3s;
-}
-
-input {
-    margin-bottom: 10px;
-    border-radius: 10px;
-    padding-left: 10px;
-    background-color: darkslateblue;
-    color: aliceblue;
-    text-align: center;
-    font-size: 20px;
-    font-style: 'Garamond';
-    width: 70%;
-    height: 35px;
-    border: 1px solid black;
-    outline: none;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
-input::placeholder {
-    color: aliceblue;
-}
-
-input:focus::-webkit-input-placeholder {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-input::-webkit-input-placeholder {
-    opacity: 1;
-    transition: opacity 0.3s ease;
 }
